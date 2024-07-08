@@ -574,6 +574,10 @@ form{
     .textShadow{
         font-size: 1.5em;
     }
-
-
+    .botonDemo{
+        width: 6rem;
+    }
+    .botonRepositorio{
+        width: 6rem;
+    }
 }
