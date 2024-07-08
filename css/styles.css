@@ -1,0 +1,579 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+/* Trabajar Mobile First */
+
+/* Body */
+
+.justifyText{
+    text-align: justify;
+}
+
+section{
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.807);
+}
+
+p{
+    font-size: 1.1em;
+}
+
+h2{
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+/* header */
+.background-image{
+    background-image: url("../img/equipo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    font-size: 1.35em;
+}
+.navbar-toggler{
+    border: var(--bs-border-width) solid white;
+}
+/* Elementos base */
+.logo{
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+
+.bg-dark{
+    background-color: rgba(112, 45, 188, 0.582) !important;
+}
+
+.bg-light{
+    background-color: rgba(112, 45, 188, 0.145) !important;
+
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.8rem;
+}
+
+img{
+    max-width: 100%;
+    width: 9rem;
+}
+
+.photo{
+    width: 25%;
+    border-radius: 50%;
+}
+
+
+/* main */
+
+/* main redes */
+.redes ul{
+    text-align: center;
+    margin: auto;
+}
+
+.redes ul li{
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 0.8em;
+
+}
+
+.redes{
+    margin: 2.3rem;
+}
+
+/* seccion habilidades y pasatiempo */
+
+.padreBox{
+    display: flex;
+}
+.pBox{
+    text-align: center;
+}
+
+/* seccion formacion */
+.padreBoxFormacion{
+    display: flex;
+}
+
+.divProyectos{
+    display: flex;
+    gap: 1rem;
+}
+.textoProyetos{
+    padding: auto;
+    margin: auto;
+    line-height: 1rem;
+
+}
+.botonesProyectos{
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.imgCodfidicador{
+    border-radius:6px;
+}
+
+.botonDemo{
+    height: 3rem;
+    width: 10rem;
+    border-radius: 6px;
+    background-color: rgba(112, 45, 188, 0.582) !important;
+    margin-top: 0.8rem;
+    cursor: pointer;
+}
+.botonDemo a{
+    color: white;
+}
+
+.botonDemo:hover{
+    transform: scale(1.05);
+}
+
+.botonRepositorio{
+    width: 10rem;
+    border-radius: 6px;
+    background-color:white;
+    border: 1.5px solid  rgba(112, 45, 188, 0.582) !important;
+    height: 3rem;
+    margin-top: 0.8rem;
+    cursor: pointer;
+}
+.botonRepositorio a{
+    color: rgba(112, 45, 188, 0.582) !important;
+
+}
+
+.botonRepositorio:hover{
+    transform: scale(1.05);
+}
+
+
+/* Contacto */
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "imgContacto contacto1"
+    "imgContacto form";
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 3rem;
+
+}
+
+    .imgContacto{
+        grid-area: imgContacto;
+        max-width: 100%;
+        padding: auto;
+        margin: auto;
+        width: 65%;
+
+    }
+
+    .contacto1{
+        grid-area: contacto1;
+        line-height: 20px;
+        
+    }
+
+    .form{
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    margin-top: -3rem;
+    }
+
+    textarea{
+    resize: none;   
+    border-radius: 6px;
+    padding: 0.3rem;
+    }   
+
+
+
+    input[type="text"],
+    input[type="email"]{
+        height: 2rem;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        padding: 0.3rem;
+    }
+    
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        border-bottom: 3.5px solid rgba(112, 45, 188, 0.582) !important;
+        outline: none;
+
+    }
+    label{
+        margin-top: 1rem;
+        background-color: white;
+        color:rgb(112, 45, 188);
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        padding: 0.3rem;
+    }
+    .divForm{
+        flex-direction: column;
+        border-radius: 6px;
+        background-color: white;
+
+    }
+    .mensaje{
+        height: 10rem;
+        width: auto;
+        margin-top: 1rem;
+
+    }
+    .asunto{
+        height: 3rem;
+        width: auto;
+        margin-top: 1rem;
+    }
+
+    button[type="submit"] {
+        height: 3rem;
+        width: 10rem;
+        border-radius: 6px;
+        background-color: rgba(112, 45, 188, 0.582) !important;
+        color: white;
+        margin-top: 0.8rem;
+        box-shadow: inset 5px rgba(77, 77, 77, 0.397);
+
+
+    }
+    button[type="submit"]:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+
+    }
+
+/* footer */
+.footer{
+    background-image: url("../img/trabajarEnEquipo.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 1em;
+    padding: 2rem;
+}
+
+.textShadow {
+    color: rgb(249, 238, 238);
+    text-shadow: 3px 3px 3px  rgb(0, 0, 0);
+}
+
+.redesFooter ul li a{
+    font-size: 0.8em;
+    color: white;
+
+}
+
+/* Media Queries */
+/* MQ para desktop */
+@media (min-width: 768px) {
+
+    /* logo */
+    .logo{
+        width: 15%;
+    }
+    /* menu */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+    }
+        
+
+    /* main */
+    .redes ul li a{
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        font-size: 2em;
+    }
+    
+    .redes ul li a:hover{    
+    color:  rgba(112, 45, 188, 0.857);        
+    }
+    .padreBox{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .padreBoxFormacion{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 0.5rem;
+    }
+
+    .pBox{
+        text-align: center;
+
+    }
+    .pFormacion p{
+        text-align: center;
+        line-height: 1rem;
+        padding-top: 1rem;
+
+    }
+
+    /* imagenes */
+    .photo{
+        width: 25%;
+        border-radius: 50%;
+    }
+    
+    img{
+        width: 9rem;
+    }
+
+    .imgFormacion{
+        width: 16rem;
+ 
+    }
+
+    .imgCodfidicador{
+        width: 45rem;
+    }
+
+    /* footer */
+    .redesFooter{
+        font-size: 1.8em;
+    }
+        
+    .redesFooter ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1.8rem;
+    }
+        
+
+}
+
+/* MQ para tablet */
+
+@media (min-width: 580px) and (max-width: 767px ){
+    /* main */
+
+    h2{
+        text-align: center;
+    }
+    .padreBox{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .box{
+        padding: auto;
+        margin: auto;
+    }
+    .padreBoxFormacion{
+        padding: 0.5rem;
+        justify-content: center;
+        text-align: center;
+        gap: 0.5rem;
+
+    }
+    .imgFormacion{
+        width:11rem ;
+    }
+    .boxFormacion{
+        padding: auto;
+        margin: auto;
+    }
+
+    .pFormacion{
+        margin-top: 0.5rem;
+        text-align: center;
+        font-size: 0.9em;
+        line-height: 1rem;
+        
+    }
+
+    .divProyectos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: auto;
+        text-align: center;
+    }
+    .imgCodfidicador{
+        width: 90%;
+    }
+
+    .botonesProyectos{
+        margin-right: 0;
+    }
+
+    .imgContacto{
+        display: none;
+    }
+
+    .contacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .contacto1 h2, p{
+        margin-bottom: 0;
+        padding: 0;
+        line-height: 1.7rem;
+
+    }
+
+    .form{
+        margin-top: 0;
+    }
+
+    .pBox{
+        text-align: center;
+    }
+    .redes{
+        font-size: 1.8em;
+    
+    }
+    /* footer */
+    .redesFooter{
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width: 579px) {
+
+    h2{
+        text-align: center;
+    }
+    .padreBox{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .box{
+        padding: auto;
+        margin: auto;
+    }
+    .padreBoxFormacion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxFormacion{
+        padding: auto;
+        margin: auto;
+
+    }
+    .imgFormacion{
+        width: 20rem;
+        padding: auto;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .pFormacion{
+        text-align: center;
+    }
+
+    .divProyectos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: auto;
+        text-align: center;
+    }
+    .imgCodfidicador{
+        width: 90%;
+    }
+
+    .botonesProyectos{
+        margin-right: 0;
+    }
+
+    .imgContacto{
+        display: none;
+    }
+
+    .contacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .contacto1 h2, p{
+        margin-bottom: 0;
+        padding: 0;
+        line-height: 1.7rem;
+
+    }
+
+    .form{
+        margin-top: 0;
+    }
+    .redes{
+        font-size: 1.5rem;
+        text-align: justify;
+        margin-bottom: 2.3rem;
+    }
+    .pBox{
+        text-align: center;
+    }
+
+    /* footer */
+    .redesFooter{
+        font-size: 1.5em;
+        color: black;
+    }
+
+    .textShadow{
+        font-size: 1.5em;
+    }
+
+
+}
